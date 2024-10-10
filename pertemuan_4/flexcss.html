@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .content{
+        width: 200px;
+        background-color: aqua;
+        border: 2px solid blue;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="content" style="order: 1;">
+            <h1>Ini Konten1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officiis beatae, inventore vitae vel reiciendis ea ab tempora alias quis cumque distinctio neque quod dolore tempore sunt perspiciatis atque similique!</p>
+        </div>
+        <div class="content" style="order: 3;">
+            <h1>Ini Konten 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rerum dicta, repellat ullam pariatur quae incidunt et veritatis adipisci, dolorum unde fugit ipsum soluta eum cupiditate omnis nihil accusantium debitis?</p>
+        </div>
+        <div class="content" style="order: 4;">
+            <h1>Ini Konten 3</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet labore dolorem qui vitae ullam corporis consequatur iste commodi quae quia blanditiis debitis suscipit perferendis, cupiditate delectus aliquid ex, incidunt inventore.</p>
+        </div>
+        <div class="content" style="order: 2;">
+            <h1>Ini Konten 4</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur optio laborum voluptatibus unde assumenda quas blanditiis quam eaque voluptate fugiat. Eveniet dolorum quod nisi id odit tempora fugiat natus suscipit!</p>
+        </div>
+    </div>
+</body>
+</html>
