@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Hellow world</h1>
+    <h2 flag = 'apa' >judul baru</h1>
+    <button onclick="ChangeText()"> Change Title</button>
+     <script>
+   let button = document.querySelector('button');
+            button.addEventListener('click',function(){
+                alert ('button was clicked')
+            })
+
+        function ChangeText(){
+            // document.getElementById('header').innerHTML = 'Hello Javascript!';
+            
+            // let header = document.getElementById('header');
+            // header.innerHTML = header.nodeType;
+
+            // let elemnt = document.createElement('h2');
+            // elemnt.innerHTML = 'ini Element baru';
+            // document.body.appendChild(elemnt);
+
+            let elementTag = document.getElementsByTagName('h2');
+            elementTag[0].innerHTML = 'ini sub judul baru';
+
+            let header = document.getElementById('header');
+            const valueFlag = header.getAttribute('flag');
+            header.innerHTML = valueFlag;
+
+         
+
+        }
+     </script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,4 +58,65 @@
         document.writeln('<br>');
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch js</title>
+</head>
+<body>
+    <!-- buat multiple condition bisa pakai switch tapi lebih rekomend if else -->
+     <!-- Fallthrought adalah pengelompokkan case dengan satu break -->
+    <script>
+        const grade = 'B';
+        let message;
+        switch(grade){
+            case 'A':
+            case 'B':
+            case 'C':
+            message = "Well done!";
+            break;
+            case 'D':
+            case 'E':
+            message = "You Passed!";
+            break;
+            default:
+                message = "You are failed"
+        }
+        document.writeln("You Got = "+ grade+" "+ message);
+
+        const day = 3;
+        let dayName;
+
+        switch(day){
+            case 1:
+            dayName = "Monday";
+            break;
+            case 2:
+            dayName = "Tuesday";
+            break;
+            case 3:
+            dayName = "Wednesday";
+            break;
+            case 4:
+            dayName = "Friday";
+            break;
+            case 5:
+            dayName = "Saturday";
+            break;
+            case 6:
+            dayName = "Sundat";
+            break;
+            default:
+            dayName = "Invalid";
+            
+            
+        }
+        document.writeln(dayName);
+        document.writeln('<br>');
+    </script>
+</body>
+>>>>>>> c9ffd2f8656922cce6f7d4537fc1e75fd00e4cd9
 </html>
